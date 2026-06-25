@@ -1,4 +1,9 @@
 # Mathematical Systems Explorer
+Author: Xirui Gong
+
+
+This project marks the first step of my journey into computational modelling. I hope each future project will build upon what I learn here.
+
 
 A Python project exploring how mathematics can be used to model, understand and predict real-world systems.
 
