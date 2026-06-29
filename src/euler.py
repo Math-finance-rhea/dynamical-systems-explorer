@@ -29,4 +29,31 @@ def logistic_rate(P: float, r: float, K: float) -> float:
         Growth rate dP/dt.
     """
     return r * P * (1 - P / K)
-print(logistic_rate(100, 0.8, 1000))
+P = 100
+r = 0.8
+K = 1000
+dt = 0.1
+
+growth = logistic_rate(P, r, K)
+def simulate_logistic(P0: float, r: float, K: float, dt: float, steps: int):
+    """
+    Simulate logistic growth using Euler's method.
+    """
+    P = P0
+    populations = [P]
+
+    print(f"Step 0: Population = {P:.2f}")
+
+    for step in range(steps):
+        growth = logistic_rate(P, r, K)
+        P = P + dt * growth
+        populations.append(P)
+
+        print(f"Step {step + 1}: Population = {P:.2f}")
+
+    return populations
+
+
+results = simulate_logistic(P0=100, r=0.8, K=1000, dt=0.1, steps=10)
+
+print(results)
