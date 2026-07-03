@@ -6,7 +6,8 @@ Topic: Epidemic Growth Model
 
 Author: Xirui Gong
 """
-print("Hello, Dynamical Systems!")
+from pathlib import Path
+import matplotlib.pyplot as plt
 
 def logistic_rate(P: float, r: float, K: float) -> float:
     """
@@ -52,8 +53,42 @@ def simulate_logistic(P0: float, r: float, K: float, dt: float, steps: int):
         print(f"Step {step + 1}: Population = {P:.2f}")
 
     return populations
+results1 = simulate_logistic(
+    P0=100,
+    r=0.2,
+    K=1000,
+    dt=0.1,
+    steps=300
+)
 
+results2 = simulate_logistic(
+    P0=100,
+    r=0.8,
+    K=1000,
+    dt=0.1,
+    steps=300
+)
 
-results = simulate_logistic(P0=100, r=0.8, K=1000, dt=0.1, steps=10)
+results3 = simulate_logistic(
+    P0=100,
+    r=1.5,
+    K=1000,
+    dt=0.1,
+    steps=300
+)
 
-print(results)
+plt.plot(results1, label="r = 0.2")
+plt.plot(results2, label="r = 0.8")
+plt.plot(results3, label="r = 1.5")
+
+plt.title("Logistic Growth Model")
+plt.xlabel("Step")
+plt.ylabel("Population")
+plt.legend()
+output_path = Path(__file__).parent.parent / "figures" / "logistic_growth.png"
+
+plt.savefig(output_path, dpi=300, bbox_inches="tight")
+
+print(f"Figure saved to: {output_path}")
+plt.show()
+

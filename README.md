@@ -64,3 +64,19 @@ Topics:
 - Interactive user interface
 - Adjustable parameters
 - Real-world datasets
+
+## Research Notes
+
+Experiment 1: Effect of Growth Rate
+
+Three simulations were performed with different growth rates
+(r = 0.2, 0.8, 1.5).
+
+Observation:
+- Larger values of r lead to faster population growth.
+- Smaller values of r lead to slower population growth.
+- All simulations approach the same equilibrium value K = 1000.
+
+Conclusion:
+The growth rate r controls how quickly the system approaches equilibrium,
+while the carrying capacity K determines the long-term population level.
