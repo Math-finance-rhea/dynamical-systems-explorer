@@ -53,33 +53,19 @@ def simulate_logistic(P0: float, r: float, K: float, dt: float, steps: int):
         print(f"Step {step + 1}: Population = {P:.2f}")
 
     return populations
-results1 = simulate_logistic(
-    P0=100,
-    r=0.2,
-    K=1000,
-    dt=0.1,
-    steps=300
-)
 
-results2 = simulate_logistic(
-    P0=100,
-    r=0.8,
-    K=1000,
-    dt=0.1,
-    steps=300
-)
+initial_conditions = [10, 100, 500, 1200]
 
-results3 = simulate_logistic(
-    P0=100,
-    r=1.5,
-    K=1000,
-    dt=0.1,
-    steps=300
-)
+for P0 in initial_conditions:
+    results = simulate_logistic(
+        P0=P0,
+        r=0.8,
+        K=1000,
+        dt=0.1,
+        steps=300
+    )
 
-plt.plot(results1, label="r = 0.2")
-plt.plot(results2, label="r = 0.8")
-plt.plot(results3, label="r = 1.5")
+    plt.plot(results, label=f"P0 = {P0}")
 
 plt.title("Logistic Growth Model")
 plt.xlabel("Step")

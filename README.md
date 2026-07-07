@@ -80,3 +80,17 @@ Observation:
 Conclusion:
 The growth rate r controls how quickly the system approaches equilibrium,
 while the carrying capacity K determines the long-term population level.
+
+
+## Stability Analysis
+
+For the logistic equation
+
+dP/dt = rP(1 - P/K),
+
+the equilibria are:
+
+- P = 0 (unstable)
+- P = K (stable)
+
+The simulations confirm that solutions with positive initial conditions converge to the stable equilibrium P = K.
