@@ -13,6 +13,16 @@ This project combines ordinary differential equations (ODEs), numerical methods 
 
 The goal is to bridge mathematics, programming and computational modelling through interactive simulations.
 
+### Skills Demonstrated
+
+- Python Programming
+- Numerical Methods
+- Differential Equations
+- Dynamical Systems
+- Scientific Visualisation
+- Git & GitHub
+
+
 ## Modules
 
 ### 1. Epidemic Spread
@@ -61,9 +71,12 @@ Topics:
 
 ## Future Improvements
 
-- Interactive user interface
-- Adjustable parameters
-- Real-world datasets
+- Interactive parameter sliders
+- Additional ecological models
+- Improved visualisation tools
+- Phase portrait automation
+- Interactive dashboards
+
 
 ## Research Notes
 
@@ -94,3 +107,64 @@ the equilibria are:
 - P = K (stable)
 
 The simulations confirm that solutions with positive initial conditions converge to the stable equilibrium P = K.
+
+### Predator–Prey Dynamics
+
+The Lotka–Volterra model was used to study interactions between predator and prey populations.
+
+The model demonstrates:
+
+- Cyclic population behaviour
+- Phase plane trajectories
+- Equilibrium points
+- Dependence on initial conditions
+
+Vector fields were added to visualise the direction of motion throughout the phase plane.
+
+The behaviour of Euler's Method and RK4 was compared, showing that RK4 preserves the closed orbits much more accurately.
+
+
+## SIR Epidemic Model
+
+The SIR model divides a population into:
+
+- Susceptible (S)
+- Infected (I)
+- Recovered (R)
+
+The simulations investigate:
+
+- Infection dynamics
+- Peak infection levels
+- The effect of transmission rate β
+- The effect of recovery rate γ
+
+Parameter sweeps were used to analyse how changing β affects the epidemic curve.
+
+## Numerical Methods
+
+The project compares two numerical methods:
+
+### Euler Method
+
+A simple first-order approximation.
+
+### Runge–Kutta 4 (RK4)
+
+A higher-order method with significantly improved accuracy.
+
+The methods were compared on both exponential growth and predator–prey systems.
+
+## Competition Model
+
+A two-species competition model was implemented to study resource competition.
+
+Topics explored:
+
+- Nullclines
+- Equilibria
+- Saddle points
+- Basins of attraction
+- Dependence on initial conditions
+
+The simulations show how different initial populations can lead to different long-term outcomes.
