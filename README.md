@@ -123,6 +123,8 @@ Vector fields were added to visualise the direction of motion throughout the pha
 
 The behaviour of Euler's Method and RK4 was compared, showing that RK4 preserves the closed orbits much more accurately.
 
+![Predator–Prey Phase Portrait](figures/predator_prey_phase_portrait.png)
+
 
 ## SIR Epidemic Model
 
@@ -155,6 +157,9 @@ A higher-order method with significantly improved accuracy.
 
 The methods were compared on both exponential growth and predator–prey systems.
 
+![SIR Model](figures/sir_model.png)
+
+
 ## Competition Model
 
 A two-species competition model was implemented to study resource competition.
@@ -168,3 +173,9 @@ Topics explored:
 - Dependence on initial conditions
 
 The simulations show how different initial populations can lead to different long-term outcomes.
+
+![Competition Phase Portrait](figures/competition_phase_portrait.png)
+
+The phase portrait below shows trajectories, nullclines, equilibrium points and the vector field for the competition model.
+
+![Competition Phase Portrait](figures/competition_phase_portrait.png)
