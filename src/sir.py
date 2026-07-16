@@ -85,5 +85,9 @@ plt.title("SIR Epidemic Model")
 
 plt.legend()
 plt.grid()
-
+plt.savefig(
+    "figures/sir_model.png",
+    dpi=300,
+    bbox_inches="tight"
+)
 plt.show()

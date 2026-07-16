@@ -99,4 +99,9 @@ plt.ylabel("Foxes")
 plt.title("Predator-Prey Phase Portrait")
 plt.legend()
 
+plt.savefig(
+    "figures/predator_prey_phase_portrait.png",
+    dpi=300,
+    bbox_inches="tight"
+)
 plt.show()
